@@ -1,0 +1,6 @@
+ - name: Asterisk Installer
+   hosts: ubuntu
+   become: true
+   tasks:
+    - name: Install Asterisk 16 on Ubuntu (18.04)
+      script: /etc/ansible/script/asterisk_installer.sh >> /ansible_logs.txt
