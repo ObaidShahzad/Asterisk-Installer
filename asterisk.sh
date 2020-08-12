@@ -43,7 +43,6 @@ sed -i 's/;runuser/runuser/g' /etc/asterisk/asterisk.conf
 sed -i 's/;rungroup/rungroup/g' /etc/asterisk/asterisk.conf
 systemctl restart asterisk
 systemctl enable asterisk
-ufw allow proto tcp from any to any port 5060,5061
 echo -e '\033[0;32m
 
 ---- INSTALLATION SUCCESSFUL ----
